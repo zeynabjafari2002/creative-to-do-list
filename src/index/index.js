@@ -108,7 +108,7 @@ function todoGenerator(todoList){
 
         // deleteTask(taskArray)
     })
-    deleteTask(taskArray)
+    // deleteTask(taskArray)
 }
 
 // change status
@@ -130,11 +130,20 @@ function changeStatusInArray(taskId){
         setLocalStorage(taskArray)
     }
 }
-// function deleteTask(taskId){
-//     let clickedTask=taskArray.find((todo)=>todo.id===taskId)
 
-//     taskArray.splice(clickedTask,1)
-// }
+// delete task
+function deleteTask(taskId){
+    let localStorageTodos=JSON.parse(localStorage.getItem('todo'))
+    taskArray=localStorageTodos
+    let onclickedTodo=localStorageTodos.findIndex(function (todo){
+        return todo.id===taskId
+    })
+
+    taskArray.splice(onclickedTodo,1)
+   
+    setLocalStorage(taskArray)
+    todoGenerator(taskArray)
+}
 
 // adding to local  storage
 function setLocalStorage(todoList){
