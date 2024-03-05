@@ -2,9 +2,12 @@
 let $=document
 
 // date
-let dateRightNow=new Date().getMonth() +"/"+ new Date().getDate()
+let date=new Date()
+// console.log(date);
+let currentMonthDate=date.toLocaleString('en-US', {month: 'short'})
+let dateRightNow= currentMonthDate +"/"+ date.getDate()
 
-// statistics of to dos
+// variables of to dos
 let taskArray=[]
 let totalNum=$.querySelector('#totalNum')
 let completedNum=$.querySelector('#completedNum')
@@ -19,7 +22,7 @@ function addNewTaskByPencilBtn(){
     let newTaskObj={
         id : taskArray.length+1 ,
         task : inputValue.value ,
-        date : dateRightNow , 
+        date : dateRightNow, 
         status : false
     }
     if(inputValue.value==='' || inputValue.value===null ){
@@ -106,9 +109,7 @@ function todoGenerator(todoList){
         tableDataDelete.append(deleteIcon)
         tableRow.append(tableDataDelete)
 
-        // deleteTask(taskArray)
     })
-    // deleteTask(taskArray)
 }
 
 // change status
@@ -161,7 +162,6 @@ function getDataFromLocalStorage(){
         taskArray=[]
     }
     todoGenerator(taskArray)
-    // deleteTask(taskArray)
 }
 
 window.addEventListener('load' , getDataFromLocalStorage)
