@@ -791,6 +791,14 @@ video {
     margin-left: 3rem;
   }
 
+  .A51\:ml-20 {
+    margin-left: 5rem;
+  }
+
+  .A51\:ml-16 {
+    margin-left: 4rem;
+  }
+
   .A51\:w-11\/12 {
     width: 91.666667%;
   }
