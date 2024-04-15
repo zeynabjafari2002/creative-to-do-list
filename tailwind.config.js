@@ -14,9 +14,9 @@ module.exports = {
       padding:{
         3:'3px'
       },
-      // backgroundImage: {
-      //   'body-background': "url('/img/botanical-cannabis-leaf-wallpaper-with-empty-space_52683-51644.jpg')",
-      // }
+      screens:{
+        'A51': '412px',
+      }
     },
   },
   plugins: [],

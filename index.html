@@ -9,25 +9,25 @@
     <script src="index.js" defer></script>
     <title>TO DO LIST</title>
 </head>
-<body class="bg-[url('/blob/main/img/botanical-cannabis-leaf-wallpaper-with-empty-space_52683-51644%20(1).jpg')] bg-no-repeat bg-cover  flex justify-center place-content-center items-center">
-    <div class="w-1/2 h-96 bg-green-800 z-50 w-3/6 mt-48 shadow-lg shadow-gray-800 rounded-lg">
-        <h1 class="text-white text-4xl text-center pt-12 font-bold uppercase">to do list</h1>
+<body class="bg-[url('/img/botanical-cannabis-leaf-wallpaper-with-empty-space_52683-51644 (1).jpg')] bg-no-repeat bg-cover  flex justify-center place-content-center items-center">
+    <div class="w-1/2 h-96 bg-green-800 z-50 w-3/6 mt-48 shadow-lg shadow-gray-800 rounded-lg A51:w-11/12">
+        <h1 class="text-white text-4xl text-center pt-12 font-bold uppercase A51:text-3xl">to do list</h1>
         <div class="flex justify-center mt-4">
             <p id="totalNum" class="text-white text-sm capitalize text-center inline pr-2">total</p>
             <p id=completedNum class="text-white text-sm capitalize inline pr-2"> completed </p>
             <p id=pendingNum class="text-white text-sm capitalize inline pr-2"> pending</p>
         </div>
-        <input id="todoInput" type="text" placeholder="Add Your Task ..." class="px-2 mt-4 ml-56 family-cursive placeholder:text-orange-200 text-orange-200 border-b-2 inline m-auto caret-orange-200 rounded-l-md border-orange-200 outline-none bg-inherit"><i id="submitTodoBtn" class="uil uil-pen inline bg-orange-200 p-3 px-1.5 rounded-r-md cursor-pointer hover:bg-white hover:text-green-800"></i>
+        <input id="todoInput" type="text" placeholder="Add Your Task ..." class="px-2 mt-4 ml-56 family-cursive placeholder:text-orange-200 text-orange-200 border-b-2 inline m-auto caret-orange-200 rounded-l-md border-orange-200 outline-none bg-inherit A51:ml-12 A51:placeholder:text-sm"><i id="submitTodoBtn" class="uil uil-pen inline bg-orange-200 p-3 px-1.5 rounded-r-md cursor-pointer hover:bg-white hover:text-green-800"></i>
 
         <!-- todos -->
         <div id="todoContainer" class="w-full bg-green-800  rounded-lg">
-            <table id="tableElement" class="w-10/12 m-auto mt-4">
+            <table id="tableElement" class="w-10/12 m-auto mt-4 A51:w-11/12">
                 <thead class="text-white ">
-                    <th class="w-4 text-center ">Num</th>
-                    <th class="w-52 text-left  pl-2">Task</th>
-                    <th class="w-4 text-center ">Date</th>
-                    <th class="w-4 text-center ">Status</th>
-                    <th class="w-4 text-center ">Delete</th>
+                    <th class="w-4 text-center A51:text-sm ">Num</th>
+                    <th class="w-52 text-left  pl-2 A51:text-sm ">Task</th>
+                    <th class="w-4 text-center A51:text-sm A51:px-1">Date</th>
+                    <th class="w-4 text-center A51:text-sm A51:px-1">Status</th>
+                    <th class="w-4 text-center A51:text-sm A51:px-1">Delete</th>
                 </thead>
                 <tbody id="tableBody"></tbody>
             </table>

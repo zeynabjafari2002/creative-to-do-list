@@ -653,10 +653,6 @@ video {
   background-color: rgb(254 215 170 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/img\/botanical-cannabis-leaf-wallpaper-with-empty-space_52683-51644\.jpg\'\)\] {
-  background-image: url('/img/botanical-cannabis-leaf-wallpaper-with-empty-space_52683-51644.jpg');
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -788,4 +784,39 @@ video {
 .hover\:text-red-600:hover {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
+@media (min-width: 412px) {
+  .A51\:ml-12 {
+    margin-left: 3rem;
+  }
+
+  .A51\:w-11\/12 {
+    width: 91.666667%;
+  }
+
+  .A51\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  .A51\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .A51\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .A51\:placeholder\:text-sm::-moz-placeholder {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .A51\:placeholder\:text-sm::placeholder {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }

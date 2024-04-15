@@ -84,6 +84,7 @@ function todoGenerator(todoList){
         let tableDataDate=$.createElement('td')
         tableDataDate.innerHTML=task.date
         tableDataDate.className='text-center'
+        tableDataDate.className='A51:text-sm'
         tableRow.append(tableDataDate)
 
         let tableDataStatus=$.createElement('td')
