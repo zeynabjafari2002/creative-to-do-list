@@ -16,7 +16,10 @@ module.exports = {
       },
       screens:{
         'A51': '412px',
-      }
+      },
+      fontFamily: {
+        "josefin": ["Josefin Sans", "sans-serif"]
+      },
     },
   },
   plugins: [],
