@@ -15,7 +15,9 @@ module.exports = {
         3:'3px'
       },
       screens:{
-        'A51': '412px',
+        '412': '412px',
+        '360': '360px',
+        
       },
       fontFamily: {
         "josefin": ["Josefin Sans", "sans-serif"]
