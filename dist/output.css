@@ -954,16 +954,70 @@ video {
   }
 }
 
-@media (min-width: 1280px){
-  .\31 280\:ml-44{
+@media (min-width: 1024px){
+  .\31 024\:ml-44{
     margin-left: 11rem;
   }
+}
 
+@media (min-width: 1280px){
   .\31 280\:ml-48{
     margin-left: 12rem;
   }
 
   .\31 280\:w-1\/2{
     width: 50%;
+  }
+}
+
+@media (min-width: 1366px){
+  .\31 366\:ml-52{
+    margin-left: 13rem;
+  }
+
+  .\31 366\:w-1\/2{
+    width: 50%;
+  }
+}
+
+@media (min-width: 1440px){
+  .\31 440\:ml-60{
+    margin-left: 15rem;
+  }
+}
+
+@media (min-width: 1600px){
+  .\31 600\:ml-72{
+    margin-left: 18rem;
+  }
+
+  .\31 600\:w-52{
+    width: 13rem;
+  }
+}
+
+@media (min-width: 1920px){
+  .\31 920\:ml-80{
+    margin-left: 20rem;
+  }
+
+  .\31 920\:ml-72{
+    margin-left: 18rem;
+  }
+
+  .\31 920\:ml-40{
+    margin-left: 10rem;
+  }
+
+  .\31 920\:ml-52{
+    margin-left: 13rem;
+  }
+
+  .\31 920\:ml-64{
+    margin-left: 16rem;
+  }
+
+  .\31 920\:w-2\/5{
+    width: 40%;
   }
 }
