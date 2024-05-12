@@ -83,10 +83,7 @@ function todoGenerator(todoList){
 
         let tableDataDate=$.createElement('td')
         tableDataDate.innerHTML=task.date
-        // tableDataDate.className='text-center'
         tableDataDate.className +='768:text-base text-center 360:text-sm'
-        // tableDataDate.className='360:text-sm'
-        // tableDataDate.className='768:text-base'
         tableRow.append(tableDataDate)
 
         let tableDataStatus=$.createElement('td')
@@ -111,7 +108,6 @@ function todoGenerator(todoList){
         deleteIcon.className='uil uil-trash-alt hover:text-red-600'
         tableDataDelete.append(deleteIcon)
         tableRow.append(tableDataDelete)
-
     })
 }
 
@@ -165,6 +161,47 @@ function getDataFromLocalStorage(){
         taskArray=[]
     }
     todoGenerator(taskArray)
+    gettingTotalTodos(taskArray)
+    gettingCompletedTodos(taskArray)
+    gettingUncompletedTodos(taskArray)
+
 }
 
-window.addEventListener('load' , getDataFromLocalStorage)
+// showing statistic of todo's status
+function gettingTotalTodos(){
+    let localStorageData=JSON.parse(localStorage.getItem('todo'))
+    if(localStorageData){
+        taskArray=localStorageData
+        let totalTodos=taskArray.length
+        totalNum.innerHTML='Total ' + totalTodos
+
+        gettingCompletedTodos(taskArray)
+        gettingUncompletedTodos(taskArray)
+    }
+    else{
+        taskArray=[]
+    }
+}
+function gettingCompletedTodos(todoArray){
+    let completedTodosArray=[]
+    for(let i=0 ; i<todoArray.length ; i++){
+        if(todoArray[i].status===true){
+            completedTodosArray.push(todoArray[i])
+        }
+    }
+    completedNum.innerHTML='completed '+completedTodosArray.length
+   
+}
+function gettingUncompletedTodos(todoArray){
+    let UncompletedTodosArray=[]
+    for(let i = 0 ; i < todoArray.length ; i++){
+        if(todoArray[i].status===false){
+            UncompletedTodosArray.push(todoArray[i])
+        }
+    }
+    pendingNum.innerHTML='Pending ' + UncompletedTodosArray.length
+}
+
+window.addEventListener('load' , getDataFromLocalStorage )
+document.addEventListener('keypress',getDataFromLocalStorage)
+document.addEventListener('click',getDataFromLocalStorage)
